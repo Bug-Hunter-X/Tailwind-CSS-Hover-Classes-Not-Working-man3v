@@ -1,0 +1,11 @@
+The issue was resolved by identifying a conflicting CSS rule in an external stylesheet. The external stylesheet had a more specific rule that inadvertently overruled the Tailwind hover class.
+
+Here's the corrected HTML:
+
+```html
+<div class="bg-red-500 hover:bg-blue-700">
+  Hover me
+</div>
+```
+
+This simple HTML, once the conflicting CSS was removed, correctly applies the hover class.
